@@ -1,0 +1,64 @@
+@use "./../custom" as *;
+@use "./../components/mixins" as *;
+
+.footer-section {
+  background-color: $deepPrimary;
+  padding: 70px 0 30px 0;
+  margin-top: 5px;
+  .footer-info {
+    background-color: $white;
+    padding: 20px 20px;
+    @include media-breakpoint-down(md) {
+      border: 15px solid $deepPrimary;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      line-height: 24px;
+      color: $primary;
+      font-weight: 300;
+
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+        line-height: 20px;
+        font-family: "Poppins", sans-serif;
+        // text-align: center;
+      }
+    }
+  }
+  .footer-links {
+    h5 {
+      display: block;
+      font-weight: 200;
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #0f7921;
+      padding: 10px 10px;
+      width: 50%;
+      @include media-breakpoint-down(md) {
+        margin: 0 auto 4px auto;
+        width: 100%;
+      }
+    }
+    a {
+      display: block;
+      margin-bottom: 14px;
+      text-decoration: none;
+      color: $white;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+    }
+  }
+
+  .footer-padding-left {
+    padding-left: 50px;
+    @include media-breakpoint-down(md) {
+      padding: 0 12px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "./../custom" as *;
+@use "./../components/mixins" as *;
+
+.page-info-section {
+  padding: 70px 0px;
+
+  .col-md-6 {
+    padding-right: 3rem;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    line-height: 32px;
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  .page-image {
+    border-radius: 10px;
+  }
+}

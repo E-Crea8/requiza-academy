@@ -1,0 +1,86 @@
+@use "./../custom" as *;
+@use "./../components/mixins" as *;
+
+.curriculum-section {
+  padding: 20px 0px 50px 0px;
+
+  .background {
+    @include gradient;
+    padding: 30px 0px;
+  }
+
+  // .separator {
+  // }
+  .courses {
+    padding: 0;
+  }
+  .course-col {
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    width: 32%;
+
+    padding: 10px 5px;
+    @include media-breakpoint-down(md) {
+      margin: 1rem auto;
+      width: 95%;
+    }
+  }
+
+  div:nth-child(2).course-col {
+    border-radius: 30px;
+    // padding: 10px 5px;
+    width: 32%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    // width: auto;
+    @include media-breakpoint-down(md) {
+      margin: 1rem auto;
+      width: 95%;
+    }
+  }
+
+  .courses-available {
+    background-color: $secondPrimary;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    text-transform: uppercase;
+    color: $white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+  }
+
+  ul {
+    padding-left: 0px;
+    li {
+      list-style-type: none;
+      display: block;
+      width: 70%;
+      margin: 5px auto;
+      padding: 10px;
+      text-transform: uppercase;
+      color: $dark;
+      background-color: $lightPrimary;
+      font-size: 12px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      text-align: left;
+
+      .square-angle {
+        display: inline-block;
+        background-color: $white;
+        padding: 5px 8px;
+        color: $primary;
+        margin-right: 10px;
+      }
+      span {
+        i {
+          font-weight: 700 !important;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

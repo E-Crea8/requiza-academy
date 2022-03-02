@@ -1,0 +1,24 @@
+@use "./../custom" as *;
+
+// GRADIENT MIXIN
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    $primary,
+    $primary 10%,
+    $secondary 100%
+  );
+}
+
+@mixin gradient2 {
+  background: linear-gradient(to right, $white, $white 10%, $white 100%);
+}
+
+// ABSOLUTE CENTER
+@mixin absoluteCenter {
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}

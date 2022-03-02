@@ -1,0 +1,58 @@
+@use "./../custom" as *;
+@use "./../components/mixins" as *;
+
+.testimonial-section {
+  background-image: url(./../../images/testimonial-background-image.png);
+  padding: 40px 0px 50px 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 100px 0px 100px 0px;
+    position: relative;
+  }
+  .testimony-header {
+    padding: 0px 0px 50px 0px;
+
+    img {
+      position: absolute;
+      top: -50px;
+      left: 50px;
+    }
+  }
+
+  .testimony-card {
+    border-radius: 0px;
+    border: 0;
+  }
+}
+
+.img-quote-holder {
+  position: relative;
+
+  p {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    line-height: 28px;
+    display: block;
+    margin-top: 20px;
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  h6 {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .img-quote {
+    position: absolute;
+    top: -15%;
+    left: 50px;
+  }
+}

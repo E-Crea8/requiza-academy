@@ -1,0 +1,310 @@
+@use "./../custom" as *;
+
+.display-2 {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+
+  &--intro {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 50px;
+    }
+  }
+
+  &--intro2 {
+    display: block;
+    font-weight: 900;
+    font-size: 55px;
+    margin-top: -55px;
+    line-height: 45px;
+    font-family: "Poppins", sans-serif;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 120px;
+      line-height: 100px;
+      margin-top: -20px;
+    }
+  }
+}
+
+.display-6 {
+  text-transform: capitalize;
+  margin-top: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 60px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &--description {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 25px;
+    }
+  }
+}
+
+.display-4 {
+  // margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  // line-height: 20px;
+  @include media-breakpoint-up(lg) {
+    line-height: 40px;
+  }
+
+  &--heading {
+    display: block;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    color: $secondary;
+    margin-top: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: 10px;
+    }
+  }
+
+  &--heading2 {
+    display: block;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: -50px;
+    // line-height: 25px;
+    font-family: "Poppins", sans-serif;
+    color: $secondary;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 46px;
+      // line-height: 20px;
+      // margin-top: -20px;
+    }
+  }
+}
+
+.display-3 {
+  // margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  // line-height: 20px;
+  display: inline-block;
+  @include media-breakpoint-up(lg) {
+    line-height: 40px;
+  }
+
+  &--heading {
+    display: block;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    color: $white;
+    margin-top: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: 10px;
+    }
+  }
+
+  &--heading2 {
+    display: block;
+    font-weight: 300;
+    font-size: 30px;
+    // margin-top: -50px;
+    line-height: 5px;
+    font-family: "Poppins", sans-serif;
+    color: $white;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 46px;
+      // line-height: 20px;
+      // margin-top: -20px;
+    }
+  }
+}
+
+.display-5 {
+  // margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  // line-height: 20px;
+  @include media-breakpoint-up(lg) {
+    line-height: 24px;
+  }
+
+  &--heading3 {
+    display: block;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    color: $secondPrimary;
+    margin-top: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 30px;
+      margin-top: 10px;
+    }
+  }
+}
+
+// AFFILIATE PROGRAM TYPOGRAPHY HERE
+.display-8 {
+  // margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  display: inline-block;
+  @include media-breakpoint-up(lg) {
+    line-height: 25px;
+    margin-top: 70px;
+    line-height: 22px;
+  }
+
+  &--heading {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: $white;
+    margin-top: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: 10px;
+    }
+  }
+
+  &--heading2 {
+    display: block;
+    font-weight: 300;
+    font-size: 25px;
+    // margin-top: -50px;
+    // line-height: 8px;
+    font-family: "Poppins", sans-serif;
+    color: $white;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 46px;
+      // line-height: 20px;
+      // margin-top: -20px;
+    }
+  }
+}
+
+// PAYOUT TYPOGRAPHY HERE
+.display-7 {
+  // margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(lg) {
+    line-height: 25px;
+    // margin-top: 70px;
+    line-height: 22px;
+  }
+
+  &--heading {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    margin-top: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: 10px;
+    }
+  }
+}
+
+// CALL TO ACTION TYPOGRAPHY
+.display-9 {
+  // margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  display: inline-block;
+  @include media-breakpoint-up(lg) {
+    line-height: 25px;
+    margin-top: 0px;
+    line-height: 22px;
+  }
+
+  &--heading {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: $white;
+    margin-top: 20px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: 10px;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+}
+
+// PAGES TYPOGRAPHY
+.display-2b {
+  margin: 6rem 0;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  @include media-breakpoint-down(md) {
+    margin: 4rem 0 2rem 0;
+  }
+  &--intro {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 50px;
+    }
+  }
+}

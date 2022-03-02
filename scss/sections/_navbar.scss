@@ -1,0 +1,50 @@
+@use "./../custom" as *;
+@use "./../components/mixins" as *;
+
+.menu {
+  // @include gradient;
+  padding: 5px 0 !important;
+  @include media-breakpoint-down(md) {
+    padding: 10px 0 !important;
+  }
+  li {
+    @include media-breakpoint-down(md) {
+      padding: 0px !important;
+    }
+
+    padding: 6px;
+    a {
+      @include media-breakpoint-down(md) {
+        color: $primary !important;
+      }
+
+      font-weight: 500;
+      text-transform: capitalize;
+      color: #fff !important;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
+
+.btn-navbar {
+  @include media-breakpoint-down(md) {
+    background-color: #ffffff !important;
+  }
+  padding: 7px 20px !important;
+  border-radius: 50px;
+  background-color: $primary;
+  font-size: 14px;
+}
+.user-menu {
+  @include media-breakpoint-down(md) {
+    display: none !important;
+  }
+  .navbar-sm-text {
+    font-size: 10px;
+    margin-top: -3px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #000000 !important;
+  }
+}

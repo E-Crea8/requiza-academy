@@ -1,0 +1,31 @@
+// MY THEME COLORS
+$LaSalleGreen: #0f7921;
+$DeepCarminePink: #ec3237;
+$secondGreen: #0d7820;
+$lightGreen: #d1e6d5;
+$deepGreen: #094a14;
+
+// WHITE AND DREAY COLORS
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$primary: $LaSalleGreen;
+$secondary: $DeepCarminePink;
+$secondPrimary: $secondGreen;
+$lightPrimary: $lightGreen;
+$deepPrimary: $deepGreen;
+
+// IMPORT BOOTSTRAP 5
+@import "./../node_modules/bootstrap/scss/bootstrap.scss";
+
+// IMPORT GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");

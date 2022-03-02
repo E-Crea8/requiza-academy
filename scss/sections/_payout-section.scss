@@ -1,0 +1,53 @@
+@use "./../custom" as *;
+@use "./../components/mixins" as *;
+.payout-secton {
+  padding: 100px 0px;
+  .payout-intro {
+    p {
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      line-height: 32px;
+      // font-weight: 300;
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+  .payout-level {
+    background-color: $deepPrimary;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      color: #1bb94a;
+      text-transform: capitalize;
+    }
+    p {
+      color: $white;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+      }
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      color: $white;
+      font-size: 10px;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+  .border-x {
+    border-left: 4px solid $white;
+    border-right: 4px solid $white;
+    @include media-breakpoint-down(md) {
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+}

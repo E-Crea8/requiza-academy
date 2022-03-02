@@ -1,0 +1,11 @@
+@use "./../custom" as *;
+@use "./../components/mixins" as *;
+
+.coin-rate-section {
+  background-color: #f3f3f3;
+  padding: 80px 0px;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
